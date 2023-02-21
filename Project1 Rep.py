@@ -17,3 +17,9 @@ def load_dictionary(file_name):
 
 file_name = "dictionary.json"
 dictionary = {}
+
+try:
+    dictionary = load_dictionary(file_name)
+    print("Dictionary loaded from file", file_name)
+except FileNotFoundError:
+    print("File", file_name, "not found - creating new dictionary.")
