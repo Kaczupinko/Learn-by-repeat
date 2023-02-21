@@ -10,8 +10,8 @@ def save_dictionary(dictionary, file_name):
 
 
 def load_dictionary(file_name):
-    with open(file_name, "r") as file:
-        dictionary = json.load(file)
+    with open(file_name, "r") as f:
+        dictionary = json.load(f)
     return dictionary
 
 
