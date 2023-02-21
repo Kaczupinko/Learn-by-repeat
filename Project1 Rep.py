@@ -30,6 +30,19 @@ def quiz(dictionary):
     print("End of quiz. Your score is:", correct_answers, "out of", len(words))
 
 
+def review(dictionary):
+    incorrect_words = []
+    for word in dictionary:
+        print("What is the translation of the word: ", word)
+        answer = input("Your answer: ")
+        if answer.lower() != dictionary[word].lower():
+            incorrect_words.append(word)
+    if len(incorrect_words) == 0:
+        print("Congratulations! You have no words to review")
+    else:
+        print("Words to review:", ",".join(incorrect_words))
+
+
 file_name = "dictionary.json"
 dictionary = {}
 
