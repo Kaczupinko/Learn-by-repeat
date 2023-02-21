@@ -31,3 +31,21 @@ while True:
     print("3 - Add a new word")
     print("4 - Save the dictionary")
     print("5 - Exit")
+    choice - input("Your choice: ")
+    if choice == "1":
+        quiz(dictionary)
+    elif choice == "2":
+        review(dictionary)
+    elif choice == "3":
+        word = input("Enter a new word: ")
+        meaning = input("Enter the meaning of " + word + ": ")
+        dictionary[word] = meaning
+        print("Word added to the dictionary.")
+    elif choice == "4":
+        save_dictionary(dictionary, file_name)
+        print("Dictionary saved to file", file_name)
+    elif choice == "5":
+        print("Exiting the program.")
+        break
+    else:
+        print("Invalid choice. Please try again.")
