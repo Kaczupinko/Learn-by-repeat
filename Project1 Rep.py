@@ -31,7 +31,7 @@ while True:
     print("3 - Add a new word")
     print("4 - Save the dictionary")
     print("5 - Exit")
-    choice - input("Your choice: ")
+    choice = input("Your choice: ")
     if choice == "1":
         quiz(dictionary)
     elif choice == "2":
