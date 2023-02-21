@@ -13,3 +13,7 @@ def load_dictionary(file_name):
     with open(file_name, "r") as file:
         dictionary = json.load(file)
     return dictionary
+
+
+file_name = "dictionary.json"
+dictionary = {}
