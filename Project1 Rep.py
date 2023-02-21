@@ -23,3 +23,11 @@ try:
     print("Dictionary loaded from file", file_name)
 except FileNotFoundError:
     print("File", file_name, "not found - creating new dictionary.")
+
+while True:
+    print("Choose an option:")
+    print("1 - Test")
+    print("2 - Review")
+    print("3 - Add a new word")
+    print("4 - Save the dictionary")
+    print("5 - Exit")
