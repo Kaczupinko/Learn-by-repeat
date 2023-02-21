@@ -20,7 +20,7 @@ def quiz(dictionary):
     random.shuffle(words)
     correct_answers = 0
     for word in words:
-        print("What is the translation of the word: ". word)
+        print("What is the translation of the word: ", word)
         answer = input("Your answer! ")
         if answer.lower() == dictionary[word].lower():
             print("Correct answer!")
