@@ -15,6 +15,21 @@ def load_dictionary(file_name):
     return dictionary
 
 
+def quiz(dictionary):
+    words = list(dictionary.keys())
+    random.shuffle(words)
+    correct_answers = 0
+    for word in words:
+        print("What is the translation of the word: ". word)
+        answer = input("Your answer! ")
+        if answer.lower() == dictionary[word].lower():
+            print("Correct answer!")
+            correct_answers += 1
+        else:
+            print("Incorrect answer. The correct answer is:", dictionary[word])
+    print("End of quiz. Your score is:", correct_answers, "out of", len(words))
+
+
 file_name = "dictionary.json"
 dictionary = {}
 
